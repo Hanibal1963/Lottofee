@@ -8,7 +8,7 @@
     <MyType>WindowsForms</MyType>
     <RootNamespace>SchlumpfSoft</RootNamespace>
     <AssemblyName>Lottofee</AssemblyName>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <OptionStrict>On</OptionStrict>
     <Version>1.2025.0316.1700</Version>
     <Authors>Andreas Sauer</Authors>
@@ -18,20 +18,21 @@
     <NeutralLanguage>de</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <ApplicationIcon>Resources\Lottofee.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-    <RemoveIntegerChecks>False</RemoveIntegerChecks>
-    <DebugType>embedded</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>portable</DebugType>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DefineTrace>False</DefineTrace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-    <RemoveIntegerChecks>False</RemoveIntegerChecks>
-    <DebugType>embedded</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DefineTrace>False</DefineTrace>
   </PropertyGroup>
 
   <ItemGroup>
